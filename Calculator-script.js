@@ -47,6 +47,8 @@ function inputNumber(inputNumber){
         currentNumber += inputNumber;
         display(currentNumber);
     }
+    // if umpisa 0, tanggalin umpisa
+    // then display
 }
 
 function inputOperation(inputOperation){
