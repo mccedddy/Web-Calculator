@@ -44,25 +44,27 @@ function clear() {
 }
 
 function equals(){
-    switch (operation){
-        case "+":
-            result = Number(firstNumber) + Number(currentNumber);
-            break;
-        case "-":
-            result = Number(firstNumber) - Number(currentNumber);
-            break;
-        case "*":
-            result = Number(firstNumber) * Number(currentNumber);
-            break;
-        case "/":
-            result = Number(firstNumber) / Number(currentNumber);
-            break;
+    if (operation != ""){
+        switch (operation){
+            case "+":
+                result = Number(firstNumber) + Number(currentNumber);
+                break;
+            case "-":
+                result = Number(firstNumber) - Number(currentNumber);
+                break;
+            case "*":
+                result = Number(firstNumber) * Number(currentNumber);
+                break;
+            case "/":
+                result = Number(firstNumber) / Number(currentNumber);
+                break;
+        }
+        display(result);
+        result = "";
+        operation = "";
+        currentNumber = "";
+        firstNumber = "";
     }
-    display(result);
-    result = "";
-    operation = "";
-    currentNumber = "";
-    firstNumber = "";
 }
 
 function display(number){
