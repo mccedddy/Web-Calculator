@@ -27,7 +27,22 @@ var result = "";
 
 // Functions
 function inputNumber(inputNumber){
-    currentNumber += inputNumber;
+    // Input 0
+    if (inputNumber == "0"){
+        
+    }
+    // Input Negative
+    else if (inputNumber == "-"){
+
+    }
+    // Input Decimal
+    else if (inputNumber == "."){
+
+    }
+    // Input Number   
+    else {
+        currentNumber += inputNumber;
+    }
     display(currentNumber);
 }
 
