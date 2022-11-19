@@ -29,21 +29,24 @@ var result = "";
 function inputNumber(inputNumber){
     // Input 0
     if (inputNumber == "0"){
-        
+        if (document.getElementById("text").innerHTML != "0"){
+            currentNumber += 0;
+            display(currentNumber);
+        }
     }
     // Input Negative
     else if (inputNumber == "-"){
-
+        alert(inputNumber);
     }
     // Input Decimal
     else if (inputNumber == "."){
-
+        alert(inputNumber);
     }
     // Input Number   
     else {
         currentNumber += inputNumber;
+        display(currentNumber);
     }
-    display(currentNumber);
 }
 
 function inputOperation(inputOperation){
@@ -83,7 +86,7 @@ function equals(){
 }
 
 function display(number){
-    document.getElementById("text").innerHTML = number;
+    document.getElementById("text").innerHTML = String(number);
 }
 
 // Button click
